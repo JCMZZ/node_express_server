@@ -1,0 +1,27 @@
+<%#  各种参数以及 HEAD信息  #%>
+<%# head设置 #%>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<%# 写入系统变量 与 js变量 #%>
+<link type="image/x-icon" rel="shortcut icon" href="<%-STATIC_PATH%>/images/favicon.ico">
+<link type="image/x-icon" rel="bookmark" href="<%-STATIC_PATH%>/images/favicon.ico">
+<link type="image/x-icon" rel="icon" href="<%-STATIC_PATH%>/images/favicon.ico">
+<%# 全局CSS js #%>
+<script>
+    var STATIC_PATH = "<%-STATIC_PATH%>"
+    var SERVER_PATH = "<%-SERVER_PATH%>"
+    var operAuth = JSON.parse('<%-operAuth%>')
+    operAuth.forEach(function(item){
+        window['AUTH_' + item.auth_code] = item.isAuth
+    })
+</script>
+<script type="text/javascript" src="<%-STATIC_PATH%>/javascripts/lib/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="<%-STATIC_PATH%>/javascripts/lib/date/WdatePicker.js"></script>
+<script type="text/javascript" src="<%-STATIC_PATH%>/javascripts/lib/emTable/emTable.js"></script>
+<script type="text/javascript" src="<%-STATIC_PATH%>/javascripts/lib/tip/jQuery.tipbox.js"></script>
+<script type="text/javascript" src="<%-STATIC_PATH%>/javascripts/lib/validate.js"></script>
+<link type="text/css" href="<%-STATIC_PATH%>/javascripts/lib/tip/tipCss.css" rel="stylesheet" />
+<link href="<%-STATIC_PATH%>/javascripts/lib/emTable/emTable.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<%-STATIC_PATH%>/stylesheets/common.css">
+<link rel="stylesheet" type="text/css" href="<%-STATIC_PATH%>/stylesheets/style.css">
+<title><%-currentPage.name%></title>

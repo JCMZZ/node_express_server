@@ -1,0 +1,19 @@
+<%# 左边导航栏   #%>
+<div class="left_nav">
+	<% nvgs.forEach(function(nvg){ %>
+		<h2 class="left_nav_module"><span class="nav-ico nav-ico-1"></span><%- nvg.name %><i></i></h2>
+		<ul  class="left_nav_menu" >
+			<% nvg.pages.forEach(function(page){ %>
+				<% if(page.id == currentPage.id){ %>
+					<li class='left_nav_high'>
+						<a href="<%-SERVER_PATH%><%-page.page_url%>"><i></i><%-page.name%></a>
+					</li>
+				<% }else{ %>
+					<li>
+						<a href="<%-SERVER_PATH%><%-page.page_url%>"><i></i><%-page.name%></a>
+					</li>
+				<% } %>
+			<% }) %>
+		</ul>
+	<% }) %>
+</div>

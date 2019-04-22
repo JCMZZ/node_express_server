@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+.layer{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:#000;
+	filter:alpha(opacity=65); 
+	-moz-opacity:0.65; 
+	opacity:0.65;
+	z-index:9999;
+}
+
+.tipBorder{
+	background-color:#fff;
+	border:#32323a 1px solid;
+	border-radius:5px;
+	min-width:200px;
+	min-height:100px;
+	position:absolute;
+	z-index:10001;
+}
+.tipTitle{
+	background:#32323a;
+	padding:10px 25px;
+	color:#fff;
+	font-size:16px;
+	text-align:left;
+	cursor:move;
+	min-height:20px;
+}
+.tipTitle span{
+	display:block;
+	margin-right:30px;
+}
+.tipicon{
+	font-style:normal;
+	cursor:pointer;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 3px;
+	background:url(tip-icon.png) no-repeat;
+}
+.tipicon-0{
+	width:30px;
+	height:32px;
+}
+.tipicon-1{
+	width:30px;
+	height:32px;
+	background-position:-30px 0;
+}
+.tipicon-2{
+	width:30px;
+	height:32px;
+	background-position:-60px 0;
+}
+.tipicon-3{
+	width:30px;
+	height:32px;
+	background-position:-90px 0;
+}
+.tipClose{
+	position:absolute;
+	background-position:0 -32px;
+	border:#000 1px solid;
+	border-radius:20px;
+	right:-15px;
+	top:-15px;
+	width:20px;
+	height:20px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.tipTitle .tipClose{
+	right:10px;
+	top:12px;
+}
+
+.tipCen{
+	padding:10px;
+	text-align:left;
+	overflow-y:auto;
+}
+
+.tipFoot{
+    padding: 10px;
+    text-align: center;
+}
+.tipFoot button{
+	border:#9083c4 1px solid;
+	border-radius:3px;
+	height:auto;
+	background-color:#9083c4;
+	color:#fff;
+	padding:5px 30px;
+	margin:0 10px;
+	cursor:pointer;
+	display:inline-block;
+	transition:background 0.5s;
+}
+.tipFoot button:hover{
+	color:#9083c4;
+	background-color:#fff;
+}
+
+.easyTipBorder{
+	background-color:#fff;
+	box-shadow:0 0 4px #ccc;
+	border-radius:5px;
+	min-width:100px;
+	max-width:300px;
+	min-height:50px;
+	position:fixed;
+	z-index:10001;
+}
+.tipLog{
+	min-width:100px;
+	background-color:#fff;
+	box-shadow:0 0 4px #ccc;
+	border-radius:5px;
+	display:inline-block;
+	position:fixed;
+	z-index:10001;
+}
