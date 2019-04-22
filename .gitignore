@@ -1,0 +1,24 @@
+.DS_Store
+node_modules/
+/build/*
+!/build/build.js
+!/build/check-versions.js
+!/build/utils.js
+!/build/vue-loader.conf.js
+!/build/webpack.base.conf.js
+!/build/webpack.dev.conf.js
+!/build/webpack.prod.conf.js
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+package-lock.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
